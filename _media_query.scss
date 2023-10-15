@@ -1,0 +1,95 @@
+@media (max-width:768px) {
+
+    #form, #email {
+        padding: 5vmin 10vmin;
+        width: 100%;
+    }
+
+    #header-btn{
+        display: none;
+        
+    }
+
+    #menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        background-color: $primary-color;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .nav-list {
+            padding: 0.5rem;
+            
+        }
+
+        .nav-link {
+            color: $text-color-light !important;
+            transition: none;
+
+            :hover {
+                transform: none;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    #menu.mobile {
+        left: 0;
+    }
+
+    #menu-mobile {
+        display: block;
+    }
+
+    #menu-mobile.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-mobile.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-mobile.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    #subscribed {
+        background-image: none;
+    }
+
+    .f-list ul {
+        justify-content: flex-start !important;
+    }
+
+    #pricing {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding-top: 0;
+
+        .p-aside {
+            width: fit-content;
+        }
+
+    }
+
+    #p-option-container {
+        padding: 0 2rem;
+    }
+
+    .p-option {
+        width: 100% !important;
+    }
+
+    .r-pair, .r-container {
+        flex-direction: column;
+    }
+}
